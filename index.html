@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User System</title>
+    <link href="/style.css" rel="stylesheet" />
+     <!--=============== FAVICON ===============-->
+     <link rel="shortcut icon" href="/1.png" type="image/x-icon">
+</head>
+<body>
+    <h1>User System</h1>
+
+    <!-- Admin Section -->
+    <h2>Admin Section</h2>
+    <form action="process.php" method="POST">
+        <label for="admin_username">Username:</label>
+        <input type="text" id="admin_username" name="admin_username" required><br>
+        
+        <label for="admin_password">Password:</label>
+        <input type="password" id="admin_password" name="admin_password" required><br>
+        
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required><br>
+        
+        <label for="product_image">Product Image URL:</label>
+        <input type="text" id="product_image" name="product_image" required><br>
+        
+        <input type="submit" value="Upload Product">
+    </form>
+
+    <!-- Customer Section -->
+    <h2>Customer Section</h2>
+    <form action="process.php" method="POST">
+        <label for="customer_username">Username:</label>
+        <input type="text" id="customer_username" name="customer_username" required><br>
+        
+        <label for="customer_password">Password:</label>
+        <input type="password" id="customer_password" name="customer_password" required><br>
+        
+        <input type="submit" value="View Product">
+    </form>
+</body>
+</html>
